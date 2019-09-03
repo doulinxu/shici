@@ -1,0 +1,101 @@
+.main1 .icons {
+  float: right;
+  width: 50px;
+  text-align: center;
+  margin-left: 0px;
+}
+.main1 .icons .down {
+  margin-top: 11px;
+}
+.titles {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  height: 24px !important;
+}
+#guanzhua {
+  float: right;
+  width: 60px;
+  text-align: center;
+  margin-left: 0px;
+  font-size: 20px;
+  display: none;
+}
+.search > div {
+  clear: both;
+  height: 29px;
+  overflow: hidden;
+  border: 1px solid #888E6D;
+  border-top: 0px;
+  background-color: #FBFAF6;
+}
+.search #txtKey {
+  height: 29px;
+  line-height: 29px;
+  background-color: #FBFAF6;
+  float: left;
+  padding-left: 2px;
+  width: 90%;
+  font-size: 16px;
+  clear: left;
+  border: 0px;
+}
+.search input.icon_search {
+  float: right;
+  width: 25px;
+  height: 25px;
+  clear: right;
+  margin-top: 2px;
+  margin-right: 2px;
+  background-image: url(img/docSearch.png);
+  background-size: 25px 25px;
+  border: 0px;
+  cursor: pointer;
+}
+.active {
+  border-bottom: 2px solid #5D6146;
+}
+.dw {
+  z-index: 100px;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 28px;
+  background-image: url(/img/morebg.png);
+  background-repeat: repeat-x;
+  -webkit-tap-highlight-color: transparent;
+}
+.main3 .sons .cont.list-item {
+  margin-top: 10px;
+  border-bottom: 1px dashed #DAD9D1;
+  padding-bottom: 7px;
+}
+.main3 .sons .cont.list-item a {
+  color: #999999;
+  font-size: 14px;
+  float: left;
+  margin-top: 5px;
+  clear: both;
+}
+.main3 .sons .cont.list-item a:first-child {
+  float: left;
+  font-size: 20px;
+  line-height: 30px;
+  color: #19537D;
+}
+.autoplay {
+  display: none;
+  clear: both;
+  margin-bottom: -15px;
+  margin-top: 10px;
+}
+.tab5 .sright > a {
+  width: auto;
+  margin-right: 16px;
+}
+.page-tip {
+  background-color: #E1E0C7;
+  border: 0px;
+  margin-top: 2px;
+  width: auto;
+  margin-right: 10px;
+}

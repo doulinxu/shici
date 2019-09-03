@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <meta http-equiv="Cache-Control" content="no-transform " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name=" apple-mobile-web-app-status-bar-style" /> 
+  <title>
+	古诗文网
+</title> 
+  <meta name="description" content="" /> 
+  <link href="css/skin20190626.css" rel="stylesheet" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+ </head> 
+ <body> 
+  <!--抬头部分--> 
+  <div class="main1" id="main1"> 
+   <a id="main1a" href="/"><b>古诗文网</b></a> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img class="down" src="img/docDown2017.png" alt="" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <a id="guanzhua" href="/"> 关注 </a> 
+   <span id="guanzhuspan"> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+  </div> 
+  <!--搜索--> 
+  <div class="search"> 
+   <div> 
+    <form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8"> 
+     <input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" /> 
+     <input type="submit" class="icon_search" value="" /> 
+     <input id="b" style="display:none;" type="text" /> 
+    </form> 
+   </div> 
+   <div id="box"></div> 
+  </div> 
+  <!--导航栏--> 
+  <div id="main2" class="main2"> 
+   <a class="active" href="/">推荐</a> 
+   <a href="tab2.html">诗文</a> 
+   <a href="tab3.html">名句</a> 
+   <a href="tab4.html">作者</a> 
+   <a href="tab5.html">古籍</a> 
+  </div> 
+  <!--诗词内容--> 
+  <div id="main3" class="main3"> 
+  	<!--banner-->
+  	<div class="sons">
+      <a href="#"><img style="float:left;" src="https://www.gushiwen.org/zhuanti/img/diming.jpg" width="100%" alt="地名"></a>
+      </div>
+  	<!--每篇诗词-->
+   <div class="sons"> 
+    <div class="cont"> 
+    	<!--操作按钮-->
+     <div class="yizhu"> 
+      <img src="img/beipic.png" width="25" height="25" alt="背诵" onclick="OnBeisong('00aa4d7e0463','http://m.gushiwen.org/default.aspx?page=2')" id="btnBeisong00aa4d7e0463" /> 
+      <img src="img/shangpic.png" width="25" height="25" alt="赏析" onclick="OnShangxi('00aa4d7e0463')" id="btnShangxi00aa4d7e0463" /> 
+      <img src="img/zhupic.png" width="25" height="25" alt="注释" onclick="OnZhushi('00aa4d7e0463')" id="btnZhushi00aa4d7e0463" /> 
+      <img src="img/yipic.png" width="25" height="25" alt="译文" onclick="OnYiwen('00aa4d7e0463')" id="btnYiwen00aa4d7e0463" /> 
+     </div> 
+     <p>
+     	<a class="titles" href="#">
+     		<b>春晚书山家</b>
+     	</a>
+     </p> 
+     <p class="source">
+     	<a href="#">唐代</a><span>：</span><a href="#">贯休</a>
+     </p> 
+     <div class="contson" id="contson00aa4d7e0463" style="position:relative; z-index:0px;">
+      	            柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。
+      <br /> 柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。
+      <br /> 柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。
+      <br /> 柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。 
+     </div> 
+    </div> 
+    <!--收藏下载朗读操作-->
+    <div class="tool"> 
+     <div class="shoucang">
+      <img name="0" onload="selectLike(346918)" onclick="changeLike(346918,'http://m.gushiwen.org/default.aspx?page=2')" src="img/shoucang.png" alt="收藏" width="18" height="18" />
+     </div> 
+     <div class="toolpinglun">
+      <a href="#"><img src="img/download.png" alt="下载" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:copy(346918)"><img src="img/copy.png" alt="复制" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:Play(346918)"><img id="speakerimg346918" src="img/speaker.png" alt="" width="18" height="18" /></a>
+     </div> 
+     <div class="jiucuo">
+      <a href="#">完善</a>
+     </div> 
+    </div> 
+    <div class="tag"> 
+     <a href="#">农村</a> 
+     <span>，</span>
+     <a href="#">田园</a> 
+     <span>，</span>
+     <a href="#">生活</a> 
+    </div> 
+   </div> 
+   <div class="sons"> 
+    <div class="cont"> 
+    	<!--操作按钮-->
+     <div class="yizhu"> 
+      <img src="img/beipic.png" width="25" height="25" alt="背诵" onclick="OnBeisong('00aa4d7e0463','http://m.gushiwen.org/default.aspx?page=2')" id="btnBeisong00aa4d7e0463" /> 
+      <img src="img/shangpic.png" width="25" height="25" alt="赏析" onclick="OnShangxi('00aa4d7e0463')" id="btnShangxi00aa4d7e0463" /> 
+      <img src="img/zhupic.png" width="25" height="25" alt="注释" onclick="OnZhushi('00aa4d7e0463')" id="btnZhushi00aa4d7e0463" /> 
+      <img src="img/yipic.png" width="25" height="25" alt="译文" onclick="OnYiwen('00aa4d7e0463')" id="btnYiwen00aa4d7e0463" /> 
+     </div> 
+     <p>
+     	<a href="#">
+     		<b>春晚书山家</b>
+     	</a>
+     </p> 
+     <p class="source">
+     	<a href="#">唐代</a><span>：</span><a href="#">贯休</a>
+     </p> 
+     <div class="contson" id="contson00aa4d7e0463" style="position:relative; z-index:0px;">
+      	            柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。
+      <br /> 柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。
+      <br /> 柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。
+      <br /> 柴门寂寂黍饭馨，山家烟火春雨晴。
+      <br />庭花蒙蒙水泠泠，小儿啼索树上莺。 
+     </div> 
+    </div> 
+    <!--收藏下载朗读操作-->
+    <div class="tool"> 
+     <div class="shoucang">
+      <img name="0" onload="selectLike(346918)" onclick="changeLike(346918,'http://m.gushiwen.org/default.aspx?page=2')" src="img/shoucang.png" alt="收藏" width="18" height="18" />
+     </div> 
+     <div class="toolpinglun">
+      <a href="#"><img src="img/download.png" alt="下载" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:copy(346918)"><img src="img/copy.png" alt="复制" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:Play(346918)"><img id="speakerimg346918" src="img/speaker.png" alt="" width="18" height="18" /></a>
+     </div> 
+     <div class="jiucuo">
+      <a href="#">完善</a>
+     </div> 
+    </div> 
+    <div class="tag"> 
+     <a href="#">农村</a> 
+     <span>，</span>
+     <a href="#">田园</a> 
+     <span>，</span>
+     <a href="#">生活</a> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="pagesright"> 
+   <a id="amore" class="amore" href="#">下一页</a> 
+   <span class="page-tip">/ 100页</span> 
+   <span class="curent"><input id="putpage" name="page" value="1" autocomplete="off" onblur="SubPage()" /></span> 
+   <label id="temppage" style="display:none;">1</label> 
+   <label id="sumPage" style="display:none;">100</label> 
+  </div> 
+  <div class="main4" id="main4">
+    &copy; 古诗文网 1234567-1 | 
+   <a href="/" rel="nofollow">免责声明</a> 
+  </div>  
+ </body>
+</html>

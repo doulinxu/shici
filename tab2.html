@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <meta http-equiv="Cache-Control" content="no-transform " /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name=" apple-mobile-web-app-status-bar-style" /> 
+  <title>
+	古诗文网
+</title> 
+  <meta name="description" content="" /> 
+  <link href="css/skin20190626.css" rel="stylesheet" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+ </head> 
+ <body> 
+  <!--抬头部分--> 
+  <div class="main1" id="main1"> 
+   <a id="main1a" href="/"><b>古诗文网</b></a> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img class="down" src="img/docDown2017.png" alt="" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <a id="guanzhua" href="/"> 关注 </a> 
+   <span id="guanzhuspan"> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+  </div> 
+  <!--搜索--> 
+  <div class="search"> 
+   <div> 
+    <form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8"> 
+     <input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" /> 
+     <input type="submit" class="icon_search" value="" /> 
+     <input id="b" style="display:none;" type="text" /> 
+    </form> 
+   </div> 
+   <div id="box"></div> 
+  </div> 
+  <!--导航栏--> 
+  <div id="main2" class="main2"> 
+   <a href="tab1.html">推荐</a> 
+   <a class="active">诗文</a> 
+   <a href="tab3.html">名句</a> 
+   <a href="tab4.html">作者</a> 
+   <a href="tab5.html">古籍</a> 
+  </div> 
+  <!--诗词内容--> 
+  <div class="main3" id="main3"> 
+   <div class="titletype"> 
+    <div class="son1">
+     <h1>不限<span>1 / 1000+页</span></h1>
+    </div> 
+    <div id="type1" class="son2" style=" height:38px;"> 
+     <div class="sleft"> 
+      <span>类型：</span> 
+     </div> 
+     <div class="sright"> 
+      <a href="#">写景</a> 
+      <a href="#">咏物</a> 
+      <a href="#">春天</a> 
+      <a href="#">夏天</a> 
+      <a href="#">秋天</a> 
+      <a href="#">冬天</a> 
+      <a href="#">写雨</a> 
+      <a href="#">写雪</a> 
+      <a href="#">写风</a> 
+      <a href="#">写花</a> 
+     </div> 
+     <div class="sright2">
+      <img id="imgType1" src="img/jianTop.png" alt="展开" width="12" height="12" onclick="clickType()" />
+     </div> 
+    </div> 
+    <div id="type2" class="son2" style=" height:38px;"> 
+     <div class="sleft"> 
+      <span>作者：</span> 
+     </div> 
+     <div class="sright"> 
+      <a href="#">李白</a> 
+      <a href="#">杜甫</a> 
+      <a href="#">苏轼</a> 
+      <a href="#">王维</a> 
+      <a href="#">杜牧</a> 
+      <a href="#">陆游</a> 
+      <a href="#">李煜</a> 
+      <a href="#">元稹</a> 
+      <a href="#">韩愈</a> 
+      <a href="#">岑参</a> 
+      <a href="#">齐己</a> 
+      <a href="#">贾岛</a> 
+      <a href="#">柳永</a> 
+     </div> 
+     <div class="sright2">
+      <img id="imgType2" src="img/jianTop.png" alt="展开" width="12" height="12" onclick="clickType2()" />
+     </div> 
+    </div> 
+    <div id="type3" class="son2" style=" height:38px;"> 
+     <div class="sleft"> 
+      <span>朝代：</span> 
+     </div> 
+     <div class="sright"> 
+      <a href="#">先秦</a> 
+      <a href="#">两汉</a> 
+      <a href="#">魏晋</a> 
+      <a href="#">南北朝</a> 
+      <a href="#">隋代</a> 
+      <a href="#">唐代</a> 
+      <a href="#">五代</a> 
+     </div> 
+     <div class="sright2">
+      <img id="imgType3" src="img/jianTop.png" alt="展开" width="12" height="12" onclick="clickType3()" />
+     </div> 
+    </div> 
+    <div class="son2" style="margin-bottom:5px; border:0px;"> 
+     <div class="sleft"> 
+      <span>形式：</span> 
+     </div> 
+     <div class="sright"> 
+      <a href="#">诗</a> 
+      <a href="#">词</a> 
+      <a href="#">曲</a> 
+      <a href="#">文言文</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sons"> 
+    <div class="cont"> 
+     <div class="yizhu"> 
+      <img src="img/beipic.png" width="25" height="25" alt="背诵" onclick="OnBeisong('ee16df5673bc','http://m.gushiwen.org/shiwen/default.aspx')" id="btnBeisongee16df5673bc" /> 
+      <img src="img/shangpic.png" width="25" height="25" alt="赏析" onclick="OnShangxi('ee16df5673bc')" id="btnShangxiee16df5673bc" /> 
+      <img src="img/zhupic.png" width="25" height="25" alt="注释" onclick="OnZhushi('ee16df5673bc')" id="btnZhushiee16df5673bc" /> 
+      <img src="img/yipic.png" width="25" height="25" alt="译文" onclick="OnYiwen('ee16df5673bc')" id="btnYiwenee16df5673bc" /> 
+     </div> 
+     <p><a class="titles" href="#"><b>将进酒</b></a></p> 
+     <p class="source"><a href="#">唐代</a><span>：</span><a href="#">李白</a></p> 
+     <div class="contson" id="contsonee16df5673bc" style="position:relative; z-index:0px;"> 
+      <div id="contYin1"> 
+      	<!--缩略版内容-->
+       <div class="dw" onclick="showCont(1)"></div> 君不见，黄河之水天上来，奔流到海不复回。
+       <br />君不见，高堂明镜悲白发，朝如青丝暮成雪。
+       <br />人生得意须尽欢，莫使金樽空对月。
+       <br />天生我材必有用，千金散尽还复来。
+       <br />烹羊宰牛且为乐，会须一饮三百杯。
+       <br />岑夫子，丹丘生，将进酒，杯莫停。
+       <br />与君歌一曲，请君为我 
+       <div style="text-align:center; margin-top:-5px;">
+        <a href="javascript:showCont(1)">展开阅读全文 ∨</a>
+       </div> 
+      </div>
+      <!--实际内容-->
+      <div id="contQquan1" style="display: none;">
+        君不见，黄河之水天上来，奔流到海不复回。
+       <br />君不见，高堂明镜悲白发，朝如青丝暮成雪。
+       <br />人生得意须尽欢，莫使金樽空对月。
+       <br />天生我材必有用，千金散尽还复来。
+       <br />烹羊宰牛且为乐，会须一饮三百杯。
+       <br />岑夫子，丹丘生，将进酒，杯莫停。
+       <br />与君歌一曲，请君为我倾耳听。(倾耳听 一作：侧耳听)
+       <br />钟鼓馔玉不足贵，但愿长醉不复醒。(不足贵 一作：何足贵；不复醒 一作：不愿醒/不用醒)
+       <br />古来圣贤皆寂寞，惟有饮者留其名。(古来 一作：自古；惟 通：唯)
+       <br />陈王昔时宴平乐，斗酒十千恣欢谑。
+       <br />主人何为言少钱，径须沽取对君酌。
+       <br />五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。 
+       <a title="收起" href="javascript:closeCont(1)"><u>▲</u></a> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="tool"> 
+     <div class="shoucang">
+      <img id="likeImg7722" name="0" onload="selectLike(1)" onclick="changeLike(1)" src="img/shoucang.png" alt="收藏" width="18" height="18" />
+     </div> 
+     <div class="toolpinglun">
+      <a href="#"><img src="img/download.png" alt="下载" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:copy(7722)"><img src="img/copy.png" alt="复制" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:Play(7722)"><img id="speakerimg7722" src="img/speaker.png" alt="" width="18" height="18" /></a>
+     </div> 
+     <div class="jiucuo">
+      <a href="#">完善</a>
+     </div> 
+    </div> 
+    <div id="toolPlay7722" style=" display:none;clear:both;"></div> 
+    <div class="tag"> 
+     <a href="#">乐府</a> 
+     <span>，</span>
+     <a href="#">唐诗三百首</a> 
+     <span>，</span>
+     <a href="#">抒情</a> 
+     <span>，</span>
+     <a href="#">哲理</a> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="pagesright"> 
+   <a id="amore" class="amore" href="#">下一页</a> 
+   <span class="page-tip">/ 100页</span> 
+   <span class="curent"><input id="putpage" name="page" value="1" autocomplete="off" onblur="SubPage()" /></span> 
+   <label id="temppage" style="display:none;">1</label> 
+   <label id="sumPage" style="display:none;">100</label> 
+  </div> 
+  <div class="main4" id="main4">
+    &copy; 古诗文网 1234567-1 | 
+   <a href="/" rel="nofollow">免责声明</a> 
+  </div>   
+  <script src="js/skin.js" type="text/javascript" charset="utf-8"></script>
+ </body>
+</html>

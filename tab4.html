@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <meta http-equiv="Cache-Control" content="no-transform " /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name=" apple-mobile-web-app-status-bar-style" /> 
+  <title>
+	古诗文网
+</title> 
+  <meta name="description" content="" /> 
+  <link href="css/skin20190626.css" rel="stylesheet" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+ </head> 
+ <body> 
+  <!--抬头部分--> 
+  <div class="main1" id="main1"> 
+   <a id="main1a" href="/"><b>古诗文网</b></a> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img class="down" src="img/docDown2017.png" alt="" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <a id="guanzhua" href="/"> 关注 </a> 
+   <span id="guanzhuspan"> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+  </div> 
+  <!--搜索--> 
+  <div class="search"> 
+   <div> 
+    <form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8"> 
+     <input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" /> 
+     <input type="submit" class="icon_search" value="" /> 
+    </form> 
+   </div> 
+   <div id="box"></div> 
+  </div> 
+  <!--导航栏--> 
+  <div id="main2" class="main2"> 
+   <a href="tab1.html">推荐</a> 
+   <a href="tab2.html">诗文</a> 
+   <a href="tab3.html">名句</a> 
+   <a class="active">作者</a> 
+   <a href="tab5.html">古籍</a> 
+  </div> 
+  <!--诗词内容--> 
+  <div id="main3" class="main3"> 
+   <div class="titletype"> 
+    <div class="son1">
+     <h1>不限<span>1 / 1000+页</span></h1>
+    </div> 
+    <div id="type1" class="son2" style="border: 0px; height: 38px;"> 
+     <div class="sleft">
+      <span>朝代</span>
+     </div> 
+     <div class="sright"> 
+      <span>不限</span> 
+      <a href="#">先秦</a> 
+      <a href="#">两汉</a> 
+      <a href="#">魏晋</a> 
+      <a href="#">南北朝</a> 
+      <a href="#">先秦</a> 
+      <a href="#">两汉</a> 
+      <a href="#">魏晋</a> 
+      <a href="#">南北朝</a> 
+     </div> 
+     <div class="sright2">
+      <img id="imgType1" src="img/jianTop.png" alt="展开" width="12" height="12" onclick="clickType()" />
+     </div> 
+    </div> 
+   </div> 
+   <div class="autoplay" id="authorPlay247"></div> 
+   <div style=" width:1px; height:1px; overflow:hidden;"> 
+    <textarea style=" background-color:#F0EFE2; border:0px;overflow:hidden;" cols="1" rows="1" id="txtareAuthor247">李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。祖籍陇西成纪(待考)，出生于西域碎叶城，4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。https://so.gushiwen.org/authorv_b90660e3e492.aspx</textarea> 
+   </div> 
+   <div class="sonspic"> 
+    <div class="cont" style="margin-top:10px;"> 
+     <div class="divimg" style="margin-top:2px;"> 
+      <a href="#"><img src="https://song.gushiwen.cn/authorImg/libai.jpg" width="105" height="150" alt="李白" /></a> 
+     </div> 
+     <p style="height:24px;"> <a style="font-size:20px; line-height:24px; height:24px;" href="#"><b>李白</b></a> <a style="margin-left:5px;" href="javascript:PlayAuthor(247)"><img id="speakerimgAuthor247" src="img/speaker.png" alt="" width="16" height="16" /></a> </p> 
+     <p>李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。祖籍陇西成纪(待考)，出生于西域碎叶城，4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。<a href="/authors/authorvsw_b90660e3e492A1.aspx">► 1180篇诗文</a></p> 
+    </div> 
+    <div class="tool"> 
+     <div class="shoucang">
+      <img id="likeImg247" onclick="changeLikeAuthor(247,'http://m.gushiwen.org/authors/default.aspx')" src="img/shoucang.png" alt="收藏" width="18" height="18" />
+     </div> 
+     <div class="toolpinglun">
+      <a href="https://m.gushiwen.org/app/"><img src="img/download.png" alt="下载" width="18" height="18" /></a>
+     </div> 
+     <div class="toolpinglun">
+      <a href="javascript:copyAuthor(247)"><img src="img/copy.png" alt="复制" width="18" height="18" /></a>
+     </div> 
+     <div class="jiucuo">
+      <a href="/jiucuo.aspx?from=http://m.gushiwen.org/authors/default.aspx&amp;u=%e4%bd%9c%e8%80%85b90660e3e492%e3%80%8a%e6%9d%8e%e7%99%bd%e3%80%8b">完善</a>
+     </div> 
+    </div> 
+   </div> 
+   <div class="pagesright"> 
+    <a class="amore" href="#">下一页</a> 
+    <span class="page-tip">/ 200+页</span> 
+    <span class="curent"><input id="putpage" name="p" value="1" autocomplete="off" onblur="SubPage()" /></span> 
+    <label id="temppage" style="display:none;">1</label> 
+    <label id="sumPage" style="display:none;">200</label> 
+    <input type="hidden" name="t" value="" /> 
+    <input type="hidden" name="c" value="" /> 
+   </div> 
+  </div> 
+  <div class="main4" id="main4">
+    &copy; 古诗文网 1234567-1 | 
+   <a href="/" rel="nofollow">免责声明</a> 
+  </div> 
+  <script src="js/skin.js" type="text/javascript" charset="utf-8"></script>  
+ </body>
+</html>

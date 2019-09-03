@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <meta http-equiv="Cache-Control" content="no-transform " /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name=" apple-mobile-web-app-status-bar-style" /> 
+  <title>
+	古诗文网
+</title> 
+  <meta name="description" content="" /> 
+  <link href="css/skin20190626.css" rel="stylesheet" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+ </head> 
+ <body> 
+  <!--抬头部分--> 
+  <div class="main1" id="main1"> 
+   <a id="main1a" href="/"><b>古诗文网</b></a> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img class="down" src="img/docDown2017.png" alt="" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <span><img src="img/docFenge2017.png" width="2" height="50" alt="" /></span> 
+   <a class="icons" href="/"> <img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26" height="26" /> </a> 
+   <span> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+   <a id="guanzhua" href="/"> 关注 </a> 
+   <span id="guanzhuspan"> <img src="img/docFenge2017.png" width="2" height="50" alt="" /> </span> 
+  </div> 
+  <!--搜索--> 
+  <div class="search"> 
+   <div> 
+    <form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8"> 
+     <input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" /> 
+     <input type="submit" class="icon_search" value="" /> 
+     <input id="b" style="display:none;" type="text" /> 
+    </form> 
+   </div> 
+   <div id="box"></div> 
+  </div> 
+  <!--导航栏--> 
+    <div id="main2" class="main2"> 
+   <a href="tab1.html">推荐</a> 
+   <a href="tab2.html">诗文</a> 
+   <a class="active">名句</a> 
+   <a href="tab4.html">作者</a> 
+   <a href="tab5.html">古籍</a> 
+  </div> 
+  <!--诗词内容--> 
+  <div id="main3" class="main3"> 
+  	<!--分类选项部分-->
+   <div class="titletype"> 
+    <div class="son1">
+     <h1>不限<span>1 / 200+页</span></h1>
+    </div> 
+    <div id="type1" class="son2" style="border: 0px; height: 38px;"> 
+     <div class="sleft"> 
+      <span>主题：</span> 
+     </div> 
+     <div class="sright"> 
+      <span>不限</span> 
+      <a href="#">抒情</a> 
+      <a href="#">四季</a> 
+      <a href="#">山水</a> 
+      <a href="#">天气</a> 
+      <a href="#">抒情</a> 
+      <a href="#">四季</a> 
+      <a href="#">山水</a> 
+      <a href="#">天气</a>
+      <a href="#">抒情</a> 
+      <a href="#">四季</a> 
+      <a href="#">山水</a> 
+      <a href="#">天气</a> 
+     </div> 
+     <div class="sright2">
+      <img id="imgType1" src="img/jianTop.png" alt="展开" width="12" height="12" onclick="clickType()" />
+     </div> 
+    </div> 
+   </div> 
+   <div class="sons" style=" padding-bottom:12px;"> 
+    <div class="cont list-item"> 
+     <a href="#">山有木兮木有枝，心悦君兮君不知。</a> 
+     <a href="#">佚名《越人歌》</a> 
+    </div> 
+    <div class="cont list-item"> 
+     <a href="#">人生若只如初见，何事秋风悲画扇。</a> 
+     <a href="#">纳兰性德《木兰词&middot;拟古决绝词柬友》</a> 
+    </div> 
+   </div> 
+   <div class="pagesright"> 
+    <a class="amore" href="#">下一页</a> 
+    <span class="page-tip">/ 200+页</span> 
+    <span class="curent"><input id="putpage" name="p" value="1" autocomplete="off" onblur="SubPage()" /></span> 
+    <label id="temppage" style="display:none;">1</label> 
+    <label id="sumPage" style="display:none;">200</label> 
+    <input type="hidden" name="t" value="" /> 
+    <input type="hidden" name="c" value="" /> 
+   </div> 
+  </div> 
+  <div class="main4" id="main4">
+    &copy; 古诗文网 1234567-1 | 
+   <a href="/" rel="nofollow">免责声明</a> 
+  </div> 
+  <script src="js/skin.js" type="text/javascript" charset="utf-8"></script>  
+ </body>
+</html>
