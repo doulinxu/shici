@@ -1469,10 +1469,24 @@ function ShowYuanwen() {
 function showCont(id) {
     document.getElementById('contYin' + id).style.display = 'none';
     document.getElementById('contQquan' + id).style.display = 'block';
-    document.getElementById('shouqi' + id).style.display = 'block';
+    // document.getElementById('shouqi' + id).style.display = 'block';
 }
 function closeCont(id) {
     document.getElementById('contYin' + id).style.display = 'block';
     document.getElementById('contQquan' + id).style.display = 'none';
-    document.getElementById('shouqi' + id).style.display = 'none';
+    // document.getElementById('shouqi' + id).style.display = 'none';
+}
+
+
+
+// 2019/9/5 新增事件
+function showAllContent(id){
+	document.getElementById('synopsis'+id).style.display = 'none';
+	document.getElementById('mainText'+id).style.display = 'block';
+	// document.getElementById('shouqi' + id).style.display = 'none';
+}
+function hideContent(id){
+	document.getElementById('synopsis'+id).style.display = 'block';
+	document.getElementById('mainText'+id).style.display = 'none';
+	// document.getElementById('shouqi' + id).style.display = 'block';
 }

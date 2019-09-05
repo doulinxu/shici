@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+    <title>古诗文网</title>
+    <meta name="description" content="" />
+    <link href="css/skin20190626.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" /></head>
+	<style>
+		.icon_contentTitle{
+			width:25px;
+			height:25px;
+		}
+		.text_content_title{
+			font-size:22px; line-height:30px; margin-bottom:10px;
+		}
+		.fanyiShow{
+			z-index:100px; height:60px; width:100%; position:absolute; bottom:38px; background-image:url(img/morebg.png); background-repeat:repeat-x; -webkit-tap-highlight-color: transparent;
+		}
+		.fanyiContent{
+			height:30px; font-weight:bold; font-size:20px; margin-bottom:10px; clear:both;
+		}
+		.cankao_title{
+			width:20px; float:left;font-size:14px;line-height:140%;
+		}
+		.cankao_content{
+			width:90%; float:left;font-size:14px;line-height:140%;
+		}
+		.more{
+			text-align:center; margin-top:-5px;
+		}
+		.wanshan{
+			width:34px; height:18px; line-height:19px; margin-top:7px; float:right; color:#aeaeae; font-size:12px;
+		}
+	</style>
+  <body>
+	  <textarea style="display: none;" cols="1" rows="1" id="txtare7722">复制诗文内容</textarea>
+    <div class="main1" id="main1">
+      <a id="main1a" href="/">
+        <b>古诗文网</b>
+      </a>
+      <span>
+        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
+      <a class="icons" href="/">
+        <img class="down" src="img/docDown2017.png" alt="" width="26" height="26" /></a>
+      <span>
+        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
+      <span>
+        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
+      <a class="icons" href="/">
+        <img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26" height="26" /></a>
+      <span>
+        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
+      <a id="guanzhua" href="/">关注</a>
+      <span id="guanzhuspan">
+        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
+    </div>
+    <!--搜索框-->
+    <div class="search">
+      <div>
+        <form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8">
+          <input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" />
+          <input type="submit" class="icon_search" value="" />
+          <input id="b" style="display:none;" type="text" /></form>
+      </div>
+      <div id="box"></div>
+    </div>
+    <!--tab切换-->
+    <div id="main2" class="main2">
+      <a href="tab1.html">推荐</a>
+      <a class="active">诗文</a>
+      <a href="tab3.html">名句</a>
+      <a href="tab4.html">作者</a>
+      <a href="tab5.html">古籍</a></div>
+    <!--主要内容部分-->
+    <div class="main3" id="main3">
+      <!--诗词详情-->
+      <div class="sons">
+        <div class="cont">
+			<!-- 注释背诵、赏析、注释、译文功能按钮 -->
+          <!-- <div class="yizhu"> -->
+          <!--  <img src="img/beipic.png" class="icon_contentTitle"  alt="背诵" onclick="OnBeisong('ee16df5673bc','http://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')" id="btnBeisongee16df5673bc">
+            <img src="img/shangpic.png" class="icon_contentTitle"  alt="赏析" onclick="OnShangxi('ee16df5673bc')" id="btnShangxiee16df5673bc">
+            <img src="img/zhupic.png" class="icon_contentTitle"  alt="注释" onclick="OnZhushi('ee16df5673bc')" id="btnZhushiee16df5673bc">
+            <img src="img/yipic.png" class="icon_contentTitle"  alt="译文" onclick="OnYiwen('ee16df5673bc')" id="btnYiwenee16df5673bc"></div>
+          -->
+		  <h1 class="text_content_title">将进酒</h1>
+          <p class="source">
+            <a href="#">唐代</a>
+            <span>：</span>
+            <a href="#">李白</a></p>
+          <div class="contson" id="contsonee16df5673bc">君不见，黄河之水天上来，奔流到海不复回。
+            <br>君不见，高堂明镜悲白发，朝如青丝暮成雪。
+            <br>人生得意须尽欢，莫使金樽空对月。
+            <br>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</div></div>
+			<!-- 注释功能按钮 -->
+        <!-- <div class="tool">
+          <div class="shoucang">
+            <img id="likeImg7722" onclick="changeLike('ee16df5673bc','http://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')" src="img/shoucang.png" alt="收藏" width="18" height="18"></div>
+          <div class="toolpinglun">
+            <a href="javascript:goAbp()">
+              <img src="img/download.png" alt="下载" width="18" height="18"></a>
+          </div>
+          <div class="toolpinglun">
+            <a href="javascript:copy(7722)">
+              <img src="img/copy.png" alt="复制" width="18" height="18"></a>
+          </div>
+          <div class="toolpinglun">
+            <a href="javascript:Play(7722)">
+              <img id="speakerimg7722" src="img/speaker.png" alt="" width="18" height="18"></a>
+          </div>
+          <div class="jiucuo">
+            <a href="#">完善</a></div>
+        </div> -->
+        <div id="toolPlay7722" style=" display:none;clear:both;"></div>
+        <div class="tag">
+          <a href="#">乐府</a>
+          <span>，</span>
+          <a href="#">唐诗三百首</a>
+          <span>，</span>
+          <a href="#">抒情</a>
+          <span>，</span>
+          <a href="#">哲理</a>
+          <span>，</span>
+          <a href="#">忧愤</a></div>
+      </div>
+      <!--译文及注释的缩略版-->
+      <div id="fanyi967" class="sons" style="position:relative; z-index:0px;">
+        <div class="contyishang" style="padding-bottom:10px;">
+          <div class="fanyiShow" onclick="fanyiShow(967)"></div>
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">译文及注释</span></h2>
+			  <!-- 注释翻译语音功能 -->
+           <!-- <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayFanyi(967)">
+              <img id="speakerimgFanyi967" src="img/speaker.png" alt="" width="16" height="16"></a> -->
+          </div>
+          <p>译文
+            <br>（缩略版）你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔东海从来不会再往回流。
+            <br>你难道没有看见，在高堂上面对明镜，深沉悲叹那一头白发？早晨还是青丝到了傍晚却变得如雪一般。
+            <div class="more">
+              <a style="text-decoration:none;" href="javascript:fanyiShow(967)">展开阅读全文∨</a></div>
+        </div>
+      </div>
+      <!--译文及注释的完整版-->
+      <div id="fanyiquan967" class="sons" style="display: none;">
+        <div class="contyishang">
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">译文及注释</span></h2>
+            <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayFanyiquan(967)">
+              <img id="speakerimgFanyiquan967" src="img/speaker.png" alt="" width="16" height="16"></a>
+          </div>
+          <p>
+            <strong>译文
+              <br></strong>（完整版）你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔东海从来不会再往回流。
+            <p>
+              <strong>注释
+                <br></strong>将进酒：劝酒歌，属乐府旧题。将（qiāng）：请。
+              <a title="收起" href="javascript:fanyiClose(967)">▲</a></p>
+        </div>
+		<!-- 注释功能按钮 -->
+       <!-- <div class="dingpai">
+          <a id="ding967" href="javascript:ding('967','https://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')">有用</a>
+          <a id="pai967" style=" margin-left:10px;" href="javascript:pai('967','https://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')">没用</a>
+          <a class="wanshan" href="#">完善</a></div> -->
+        <div class="cankao">
+          <p style="color:#919090;margin:0px; font-size:14px;line-height:140%;">参考资料：</p>
+          <div style="clear:both; float:left;color:#999999; font-size:14px; width:100%; margin-top:4px;">
+            <span class="cankao_title">1、</span>
+            <span class="cankao_content">山东省教学研究室．普通高中新课程实验教科书·语文（选修）唐诗宋词选读：山东人民出版社，2008：3-4．</span></div>
+          <div style="clear:both; float:left;color:#999999; font-size:14px; width:100%; margin-top:4px;">
+            <span class="cankao_title">2、</span>
+            <span class="cankao_content">李静．唐诗宋词鉴赏．北京：华文出版社，2009：60-61．</span></div>
+        </div>
+      </div>
+      <div class="sons">
+        <div class="contyishang">
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">创作背景</span></h2>
+			  <!-- 注释语音功能 -->
+            <!-- <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayShangxi(1216)">
+              <img id="speakerimgShangxi1216" src="img/speaker.png" alt="" width="16" height="16"></a> -->
+          </div>
+          <p>关于这首诗的写作时间，说法不一。黄锡珪编的《李太白编年诗集目录》记录为天宝十一载（公元752年）。一般认为这是天宝（公元742年正月—756年七月，唐玄宗李隆基的年号）年间李白离开京城后，周游梁、宋，与友人岑勋、元丹丘相会时所作。</p>
+        </div>
+		<!-- 注释有用、无用、完善功能 -->
+       <!-- <div class="dingpai">
+          <a id="dingsx1216" href="javascript:dingsx('1216','http://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')">有用</a>
+          <a id="paisx1216" style=" margin-left:10px;" href="javascript:paisx('1216','http://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')">没用</a>
+          <a class="wanshan" href="/jiucuo.aspx?u=%e8%b5%8f%e6%9e%901216%e3%80%8a%e5%88%9b%e4%bd%9c%e8%83%8c%e6%99%af%e3%80%8b">完善</a></div>
+       --> <div class="cankao">
+          <p style=" color:#999999;margin:0px; font-size:14px;line-height:140%;">参考资料：</p>
+          <div style="clear:both; float:left;color:#999999; font-size:14px; width:100%; margin-top:4px;">
+            <span class="cankao_title">1、</span>
+            <span class="cankao_content">萧士赟《分类补注李太白诗》</span></div>
+        </div>
+      </div>
+      <div id="shangxi1217" class="sons" style="position:relative; z-index:0px;">
+        <div class="contyishang" style="padding-bottom:10px;">
+          <div class="fanyiShow" onclick="shangxiShow(1217)"></div>
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">鉴赏</span></h2>
+			  <!-- 注释语音功能 -->
+            <!-- <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayShangxi(1217)">
+              <img id="speakerimgShangxi1217" src="img/speaker.png" alt="" width="16" height="16"></a> -->
+          </div>
+          <p>《将进酒》原是汉乐府短箫铙歌的曲调，标题的意思为“劝酒歌”，内容多是咏唱喝酒放歌之事。这首诗约作于天宝十一载（公元752年），他当时和友人岑勋在嵩山另一老友元丹丘的颍阳山居作客，作者正值仕途遇挫之际，所以借酒兴诗，来了一次酣畅淋漓的抒发。在这首诗里，李白“借题发挥”，借酒消愁，感叹人生易老</p>
+          <div class="more">
+            <a style="text-decoration:none;" href="javascript:shangxiShow(1217)">展开阅读全文∨</a></div>
+        </div>
+      </div>
+      <div id="shangxiquan1217" class="sons" style="display: none;">
+        <div class="contyishang">
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">鉴赏</span></h2>
+            <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayShangxiquan(1217)">
+              <img id="speakerimgShangxiquan1217" src="img/speaker.png" alt="" width="16" height="16"></a>
+          </div>
+          <p>《将进酒》原是汉乐府短箫铙歌的所以借酒兴诗，来了一次酣畅淋漓。</p>
+          <p>刚露一点深衷，又说回酒了，而且看起来酒兴更高了。以下诗情再入狂放，而且愈来愈狂人””。情变灭”的结尾，显见诗人奔涌跌宕的感情激流。通观全篇，真是大起大落，非如椽巨笔不办。</p>
+            <a title="收起" href="javascript:shangxiClose(1217)">▲</a></p>
+        </div>
+		<!-- 注释有用无用完善按钮 -->
+        <!-- <div class="dingpai">
+          <a id="dingsx1217" href="javascript:dingsx('1217','#')">有用</a>
+          <a id="paisx1217" style=" margin-left:10px;" href="javascript:paisx('1217','#')">没用</a>
+          <a class="wanshan" href="#">完善</a></div> -->
+        <div class="cankao">
+          <p style=" color:#999999;margin:0px; font-size:14px;line-height:140%;">参考资料：</p>
+          <div style="clear:both; float:left;color:#999999; font-size:14px; width:100%; margin-top:4px;">
+            <span class="cankao_title">1、</span>
+            <span class="cankao_content">李静．唐诗宋词鉴赏．北京：华文出版社，2009：60-61</span></div>
+          <div style="clear:both; float:left;color:#999999; font-size:14px; width:100%; margin-top:4px;">
+            <span class="cankao_title">2、</span>
+            <span class="cankao_content">周啸天等．唐诗鉴赏辞典．上海：上海辞书出版社，1983：225-228</span></div>
+        </div>
+      </div>
+      <!--赏析简略-->
+      <div id="shangxi7580" class="sons" style="position:relative; z-index:0px;">
+        <div class="contyishang" style="padding-bottom:10px;">
+          <div style=" z-index:100px; height:60px; width:100%; position:absolute; bottom:38px; background-image:url(img/morebg.png); background-repeat:repeat-x; -webkit-tap-highlight-color: transparent;" onclick="shangxiShow(7580)"></div>
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">赏析</span></h2>
+			  <!-- 注释语音 -->
+           <!-- <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayShangxi(7580)">
+              <img id="speakerimgShangxi7580" src="img/speaker.png" alt="" width="16" height="16"></a>
+          --></div>
+          <p>杜甫盛赞李白的诗说“笔落惊风雨，诗成泣鬼神”，李白自己也十分自负地说“兴酣落笔摇五岳，诗成啸傲凌沧洲”，他的诗极富浪漫主义色彩，想象丰富，极尽夸张之能事，一旦诗兴大发之时，豪情便喷薄而出，一泻千里，但又收放自如，达到了极高的艺术境界，《将进酒》即为明证。</p>
+          <p>这首诗意在表达</p>
+          <div class="more">
+            <a style="text-decoration:none;" href="javascript:shangxiShow(7580)">展开阅读全文∨</a></div>
+        </div>
+      </div>
+      <!--赏析全文-->
+      <div id="shangxiquan7580" class="sons" style="display: none;">
+        <div class="contyishang">
+          <div class="fanyiContent">
+            <h2>
+              <span style="float:left; font-size:20px; ">赏析</span></h2>
+            <a style="float:left; margin-top:4px; margin-left:5px;" href="javascript:PlayShangxiquan(7580)">
+              <img id="speakerimgShangxiquan7580" src="img/speaker.png" alt="" width="16" height="16"></a>
+          </div>
+          <p>（全文）杜甫盛赞李白的诗说“笔落惊风雨，诗成泣鬼神”，李白自己也十分自负地说“兴酣落笔摇五岳，诗成啸傲凌沧洲”，他的诗极富浪漫主义色彩，想象丰富，极尽夸张之能事，一旦诗兴大发之时，豪情便喷薄而出，一泻千里，但又收放自如，达到了极高的艺术境界，《将进酒》即为明证。</p>
+          <p>这首诗意在表达人生几何，及时行乐，圣者寂寞，饮者留名的虚无消沉思想，愿在长醉中了却一切。诗的开头六句，写人生寿命如黄河之水奔腾入海，一去不复重返，如此，应及时行乐，莫负光阴。“天生”十六句，写人生富贵不能长保，因而“千金散尽”“且为乐”。同时指出“自古圣贤皆寂寞”，只有“饮者留名”千古，并以陈王曹植为例，抒发了诗人内心的不平。“主人”六句结局，写诗人酒兴大作，“五花马”、“千金裘”都不足惜，只图一醉方休。表达了诗人旷达的胸怀。“天生我材必有用”句，是诗人自信为人的自我价值，也流露怀才不遇和渴望用世的积极思想感情。</p>
+        </div>
+		<!-- 注释有用无用完善按钮 -->
+        <!-- <div class="dingpai">
+          <a id="dingsx7580" href="">有用</a>
+          <a id="paisx7580" style=" margin-left:10px;" href="">没用</a>
+          <a class="wanshan" href="#">完善</a>
+		  </div> -->
+        <div class="cankao">
+          <p style=" color:#919090;margin:0px; font-size:14px;line-height:160%;">本节内容由匿名网友上传，原作者已无法考证。本站免费发布仅供学习参考，其观点不代表本站立场。</p></div>
+      </div>
+      <!--作者-->
+      <div class="sonspic">
+        <div class="cont" style="margin-top:10px;">
+          <div class="divimg" style="margin-top:2px;">
+            <a href="#">
+              <img src="https://song.gushiwen.org/authorImg/libai.jpg" width="105" height="150" alt="李白"></a>
+          </div>
+          <p style="height:24px;">
+            <a style="font-size:20px; line-height:24px; height:24px;" href="#">
+              <b>李白</b>
+            </a>
+			<!-- 注释语音 -->
+           <!-- <a style="margin-left:5px;" href="javascript:PlayAuthor(247)">
+              <img id="speakerimgAuthor247" src="img/speaker.png" alt="" width="16" height="16"></a>
+          --></p>
+          <p style=" margin:0px;">李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。祖籍陇西成纪(待考)，出生于西域碎叶城，4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。
+            <a href="#">►1180篇诗文</a></p>
+        </div>
+       <!-- <div class="tool">
+          <div class="shoucang">
+            <img id="likeImg247" onclick="changeLikeAuthor('b90660e3e492','http://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')" src="img/shoucang.png" alt="收藏" width="18" height="18"></div>
+          <div class="toolpinglun">
+            <a href="#">
+              <img src="img/download.png" alt="下载" width="18" height="18"></a>
+          </div>
+          <div class="toolpinglun">
+            <a href="javascript:copyAuthor(247)">
+              <img src="img/copy.png" alt="复制" width="18" height="18"></a>
+          </div>
+          <div class="jiucuo">
+            <a href="#">完善</a></div>
+        </div> -->
+      </div>
+      <div class="title">
+        <div class="titleleft"></div>猜您喜欢</div>
+      <div class="sons">
+        <div class="cont">
+          <div class="yizhu">
+            <img src="img/beipic.png" width="25" height="25" alt="背诵" onclick="OnBeisong('cbc20be78397','http://m.gushiwen.org/shiwenv.aspx?id=ee16df5673bc')" id="btnBeisongcbc20be78397">
+            <img style="display: block;" src="img/shangpic.png" width="25" height="25" alt="赏析" onclick="OnShangxi('cbc20be78397')" id="btnShangxicbc20be78397">
+            <img style="display: block;" src="img/zhupic.png" width="25" height="25" alt="注释" onclick="OnZhushi('cbc20be78397')" id="btnZhushicbc20be78397">
+            <img style=" display:none;" src="img/yipic.png" width="25" height="25" alt="译文" onclick="OnYiwen('cbc20be78397')" id="btnYiwencbc20be78397">
+			</div>
+          <p>
+            <a style="font-size:20px; line-height:24px; height:24px;" href="/shiwenv_cbc20be78397.aspx">
+              <b>善哉行·其一</b>
+            </a>
+          </p>
+          <p class="source">
+            <a href="#">魏晋</a>
+            <span>：</span>
+            <a href="#">曹丕</a></p>
+          <div class="contson" id="contsoncbc20be78397" style="position:relative; z-index:0px;">
+            <div id="contYin48008">
+              <div style=" z-index:100px; height:60px; width:100%; position:absolute; bottom:28px; background-image:url(img/morebg.png); background-repeat:repeat-x; -webkit-tap-highlight-color: transparent;" onclick="showCont(48008)"></div>
+              <p>上山采薇，薄暮苦饥。
+                <br>溪谷多风，霜露沾衣。
+                <br>野雉群雊，猿猴相追。
+                <br>随波转</p>
+              <div class="more">
+                <a href="javascript:showCont(48008)">展开阅读全文∨</a></div>
+            </div>
+            <div id="contQquan48008" style="display:none;">
+              <p>上山采薇，薄暮苦饥。
+                <br>溪谷多风，霜露沾衣。
+                <br>野雉群雊，猿猴相追。
+                <br>还望故乡，郁何垒垒！
+                <a title="收起" href="javascript:closeCont(48008)">
+                  <u>▲</u>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="tool">
+          <div class="shoucang">
+            <img id="likeImg48008" src="img/shoucang.png" alt="收藏" width="18" height="18"></div>
+          <div class="toolpinglun">
+            <a href="#">
+              <img src="img/download.png" alt="下载" width="18" height="18"></a>
+          </div>
+          <div class="toolpinglun">
+            <a href="#">
+              <img src="img/copy.png" alt="复制" width="18" height="18"></a>
+          </div>
+          <div class="jiucuo">
+            <a href="#">完善</a></div>
+        </div> -->
+        <div id="toolPlay48008" style=" display:none;clear:both;"></div>
+        <div class="tag">
+          <a href="#">乐府</a>
+          <span>，</span>
+          <a href="#">军旅</a>
+          <span>，</span>
+          <a href="#">生活</a></div>
+      </div>
+    <script src="js/skin.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+
+</html>
