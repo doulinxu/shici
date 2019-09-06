@@ -99,3 +99,17 @@
   width: auto;
   margin-right: 10px;
 }
+
+.icon_contentTitle{width:25px;height:25px;}.text_content_title{font-size:22px;line-height:30px;margin-bottom:10px;}.fanyiShow{z-index:100px;height:60px;width:100%;position:absolute;bottom:38px;background-image:url(img/morebg.png);background-repeat:repeat-x;-webkit-tap-highlight-color:transparent;}.fanyiContent{height:30px;font-weight:bold;font-size:20px;margin-bottom:10px;clear:both;}.cankao_title{width:20px;float:left;font-size:14px;line-height:140%;}.cankao_name{color:#919090;margin:0px;font-size:14px;line-height:140%;}.cankao_content{width:90%;float:left;font-size:14px;line-height:140%;}.cankao_section{clear:both;float:left;color:#999999;font-size:14px;width:100%;margin-top:4px;}.more{text-align:center;margin-top:-5px;}.wanshan{width:34px;height:18px;line-height:19px;margin-top:7px;float:right;color:#aeaeae;font-size:12px;}.sons{position:relative;z-index:0px;}.contson{position:relative;z-index:0px;}.headline_2{float:left;font-size:20px !important;}.headline_a{font-size:20px;line-height:24px;height:24px;}.mianze{color:#919090;margin:0px;font-size:14px;line-height:160%;}
+		.fixPosition{
+			color:#B00815;
+		}
+		.mingju_like{
+			margin-top:10px;border-bottom:1px dashed #DAD9D1; padding-bottom:7px;
+		}
+		.like_text{
+			float:left; font-size:20px; line-height:30px;
+		}
+		.like_from{
+			color:#999999;font-size:14px; float:left; margin-top:5px; clear:both;
+		}

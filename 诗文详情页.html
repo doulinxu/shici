@@ -1,258 +1,541 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta http-equiv="Cache-Control" content="no-transform " />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta content="black" name=" apple-mobile-web-app-status-bar-style" />
-    <title>古诗文网</title>
-    <meta name="description" content="" />
-    <link href="css/skin20190626.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" /></head>
-	<style>
-		.icon_contentTitle{width:25px;height:25px;}.text_content_title{font-size:22px;line-height:30px;margin-bottom:10px;}.fanyiShow{z-index:100px;height:60px;width:100%;position:absolute;bottom:38px;background-image:url(img/morebg.png);background-repeat:repeat-x;-webkit-tap-highlight-color:transparent;}.fanyiContent{height:30px;font-weight:bold;font-size:20px;margin-bottom:10px;clear:both;}.cankao_title{width:20px;float:left;font-size:14px;line-height:140%;}.cankao_name{color:#919090;margin:0px;font-size:14px;line-height:140%;}.cankao_content{width:90%;float:left;font-size:14px;line-height:140%;}.cankao_section{clear:both;float:left;color:#999999;font-size:14px;width:100%;margin-top:4px;}.more{text-align:center;margin-top:-5px;}.wanshan{width:34px;height:18px;line-height:19px;margin-top:7px;float:right;color:#aeaeae;font-size:12px;}.sons{position:relative;z-index:0px;}.contson{position:relative;z-index:0px;}.headline_2{float:left;font-size:20px;}.headline_a{font-size:20px;line-height:24px;height:24px;}.mianze{color:#919090;margin:0px;font-size:14px;line-height:160%;}
-	</style>
-  <body>
-	  <textarea style="display: none;" cols="1" rows="1" id="txtare7722">复制诗文内容</textarea>
-    <div class="main1" id="main1">
-      <a id="main1a" href="/">
-        <b>古诗文网</b>
-      </a>
-      <span>
-        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
-      <a class="icons" href="/">
-        <img class="down" src="img/docDown2017.png" alt="" width="26" height="26" /></a>
-      <span>
-        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
-      <span>
-        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
-      <a class="icons" href="/">
-        <img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26" height="26" /></a>
-      <span>
-        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
-      <a id="guanzhua" href="/">关注</a>
-      <span id="guanzhuspan">
-        <img src="img/docFenge2017.png" width="2" height="50" alt="" /></span>
-    </div>
-    <!--搜索框-->
-    <div class="search">
-      <div>
-        <form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8">
-          <input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value" type="text" value="" maxlength="40" autocomplete="off" />
-          <input type="submit" class="icon_search" value="" />
-          <input id="b" style="display:none;" type="text" /></form>
-      </div>
-      <div id="box"></div>
-    </div>
-    <!--tab切换-->
-    <div id="main2" class="main2">
-      <a href="tab1.html">推荐</a>
-      <a class="active">诗文</a>
-      <a href="tab3.html">名句</a>
-      <a href="tab4.html">作者</a>
-      <a href="tab5.html">古籍</a></div>
-    <!--主要内容部分-->
-    <div class="main3" id="main3">
-      <!--诗词详情-->
-      <div class="sons">
-        <div class="cont">
-		  <h1 class="text_content_title">将进酒</h1>
-          <p class="source">
-            <a href="#">唐代</a>
-            <span>：</span>
-            <a href="#">李白</a></p>
-          <div class="contson" id="contsonee16df5673bc">君不见，黄河之水天上来，奔流到海不复回。
-            <br>君不见，高堂明镜悲白发，朝如青丝暮成雪。
-            <br>人生得意须尽欢，莫使金樽空对月。
-            <br>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</div></div>
-        <div class="tag">
-          <a href="#">乐府</a>
-          <span>，</span>
-          <a href="#">唐诗三百首</a>
-          <span>，</span>
-          <a href="#">抒情</a>
-          <span>，</span>
-          <a href="#">哲理</a>
-          <span>，</span>
-          <a href="#">忧愤</a></div>
-      </div>
-      <!--译文及注释的缩略版-->
-            <div id="fanyi967" class="sons">
-              <div class="contyishang" style="padding-bottom:10px;">
-                <div class="fanyiShow" onclick="fanyiShow(967)"></div>
-                <div class="fanyiContent">
-                  <h2>
-                    <span class="headline_2">译文及注释</span></h2>
-                </div>
-                <p>译文
-                  <br>（缩略版）你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔东海从来不会再往回流。
-                  <br>你难道没有看见，在高堂上面对明镜，深沉悲叹那一头白发？早晨还是青丝到了傍晚却变得如雪一般。
-                  <div class="more">
-                    <a style="text-decoration:none;" href="javascript:fanyiShow(967)">展开阅读全文∨</a></div>
-              </div>
-            </div>
-      <!--译文及注释的完整版-->
-      <div id="mainText967" class="sons" style="display: none;">
-        <div class="contyishang">
-          <div class="fanyiContent">
-            <h2>
-              <span class="headline_2">译文及注释</span></h2>
-          </div>
-          <p>
-            <strong>译文
-              <br></strong>（完整版）你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔东海从来不会再往回流。
-            <p>
-              <strong>注释
-                <br></strong>将进酒：劝酒歌，属乐府旧题。将（qiāng）：请。
-              <a title="收起" href="javascript:hideContent(967)">▲</a></p>
-        </div>
-        <div class="cankao">
-          <p class="cankao_name">参考资料：</p>
-          <div class="cankao_section">
-            <span class="cankao_title">1、</span>
-            <span class="cankao_content">山东省教学研究室．普通高中新课程实验教科书·语文（选修）唐诗宋词选读：山东人民出版社，2008：3-4．</span></div>
-          <div class="cankao_section">
-            <span class="cankao_title">2、</span>
-            <span class="cankao_content">李静．唐诗宋词鉴赏．北京：华文出版社，2009：60-61．</span></div>
-        </div>
-      </div>
-            <div class="sons">
-              <div class="contyishang">
-                <div class="fanyiContent">
-                  <h2>
-                    <span class="headline_2">故事</span></h2>
-                </div>
-                <p>关于这首诗的写作时间，说法不一。黄锡珪编的《李太白编年诗集目录》记录为天宝十一载（公元752年）。一般认为这是天宝（公元742年正月—756年七月，唐玄宗李隆基的年号）年间李白离开京城后，周游梁、宋，与友人岑勋、元丹丘相会时所作。</p>
-              </div>
-      		<div class="cankao">
-                <p class="cankao_name">参考资料：</p>
-                <div class="cankao_section">
-                  <span class="cankao_title">1、</span>
-                  <span class="cankao_content">萧士赟《分类补注李太白诗》</span></div>
-              </div>
-            </div>
-            <div id="synopsis1217" class="sons">
-              <div class="contyishang" style="padding-bottom:10px;">
-                <div class="fanyiShow" onclick="showAllContent(1217)"></div>
-                <div class="fanyiContent">
-                  <h2>
-                    <span class="headline_2">鉴赏</span></h2>
-                </div>
-                <p>《将进酒》原是汉乐府短箫铙歌的曲调，标题的意思为“劝酒歌”，内容多是咏唱喝酒放歌之事。这首诗约作于天宝十一载（公元752年），他当时和友人岑勋在嵩山另一老友元丹丘的颍阳山居作客，作者正值仕途遇挫之际，所以借酒兴诗，来了一次酣畅淋漓的抒发。在这首诗里，李白“借题发挥”，借酒消愁，感叹人生易老</p>
-                <div class="more">
-                  <a style="text-decoration:none;" href="javascript:showAllContent(1217)">展开阅读全文∨</a></div>
-              </div>
-            </div>
-            <div id="mainText1217" class="sons" style="display: none;">
-              <div class="contyishang">
-                <div class="fanyiContent">
-                  <h2>
-                    <span class="headline_2">鉴赏</span></h2>
-                </div>
-                <p>《将进酒》原是汉乐府短箫铙歌的所以借酒兴诗，来了一次酣畅淋漓。</p>
-                <p>刚露一点深衷，又说回酒了，而且看起来酒兴更高了。以下诗情再入狂放，而且愈来愈狂人””。情变灭”的结尾，显见诗人奔涌跌宕的感情激流。通观全篇，真是大起大落，非如椽巨笔不办。</p>
-                  <a title="收起" href="javascript:hideContent(1217)">▲</a></p>
-              </div>
-              <div class="cankao">
-                <p class="cankao_name">参考资料：</p>
-                <div class="cankao_section">
-                  <span class="cankao_title">1、</span>
-                  <span class="cankao_content">李静．唐诗宋词鉴赏．北京：华文出版社，2009：60-61</span></div>
-                <div class="cankao_section">
-                  <span class="cankao_title">2、</span>
-                  <span class="cankao_content">周啸天等．唐诗鉴赏辞典．上海：上海辞书出版社，1983：225-228</span></div>
-              </div>
-            </div>
-            <!--赏析简略-->
-            <div id="synopsis7580" class="sons">
-              <div class="contyishang" style="padding-bottom:10px;">
-                <div class="fanyiShow" onclick="showAllContent(7580)"></div>
-                <div class="fanyiContent">
-                  <h2>
-                    <span class="headline_2">赏析</span></h2></div>
-                <p>杜甫盛赞李白的诗说“笔落惊风雨，诗成泣鬼神”，李白自己也十分自负地说“兴酣落笔摇五岳，诗成啸傲凌沧洲”，他的诗极富浪漫主义色彩，想象丰富，极尽夸张之能事，一旦诗兴大发之时，豪情便喷薄而出，一泻千里，但又收放自如，达到了极高的艺术境界，《将进酒》即为明证。</p>
-                <p>这首诗意在表达</p>
-                <div class="more">
-                  <a style="text-decoration:none;" href="javascript:showAllContent(7580)">展开阅读全文∨</a></div>
-              </div>
-            </div>
-            <!--赏析全文-->
-            <div id="mainText7580" class="sons" style="display: none;">
-              <div class="contyishang">
-                <div class="fanyiContent">
-                  <h2>
-                    <span class="headline_2">赏析</span></h2>
-                </div>
-                <p>（全文）杜甫盛赞李白的诗说“笔落惊风雨，诗成泣鬼神”，李白自己也十分自负地说“兴酣落笔摇五岳，诗成啸傲凌沧洲”，他的诗极富浪漫主义色彩，想象丰富，极尽夸张之能事，一旦诗兴大发之时，豪情便喷薄而出，一泻千里，但又收放自如，达到了极高的艺术境界，《将进酒》即为明证。</p>
-                <p>这首诗意在表达人生几何，及时行乐，圣者寂寞，饮者留名的虚无消沉思想，愿在长醉中了却一切。诗的开头六句，写人生寿命如黄河之水奔腾入海，一去不复重返，如此，应及时行乐，莫负光阴。“天生”十六句，写人生富贵不能长保，因而“千金散尽”“且为乐”。同时指出“自古圣贤皆寂寞”，只有“饮者留名”千古，并以陈王曹植为例，抒发了诗人内心的不平。“主人”六句结局，写诗人酒兴大作，“五花马”、“千金裘”都不足惜，只图一醉方休。表达了诗人旷达的胸怀。“天生我材必有用”句，是诗人自信为人的自我价值，也流露怀才不遇和渴望用世的积极思想感情。</p>
-              </div>
-              <div class="cankao">
-                <p class="mianze">本节内容由匿名网友上传，原作者已无法考证。本站免费发布仅供学习参考，其观点不代表本站立场。</p></div>
-            </div>
-            <!--作者-->
-            <div class="sonspic">
-              <div class="cont" style="margin-top:10px;">
-                <div class="divimg" style="margin-top:2px;">
-                  <a href="#">
-      				<!-- 诗人头像图片 -->
-                    <img src="https://song.gushiwen.org/authorImg/libai.jpg" width="105" height="150" alt="李白"></a>
-                </div>
-                <p style="height:24px;">
-                  <a class="headline_a" href="#">
-                    <b>李白</b>
-                  </a>
-      			</p>
-                <p style=" margin:0px;">李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。祖籍陇西成纪(待考)，出生于西域碎叶城，4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。
-                  <a href="#">►1180篇诗文</a></p>
-              </div>
-            </div>
-            <div class="title">
-              <div class="titleleft"></div>猜您喜欢</div>
-            <div class="sons">
-              <div class="cont">
-                <p>
-                  <a class="headline_a" href="#">
-                    <b>善哉行·其一</b>
-                  </a>
-                </p>
-                <p class="source">
-                  <a href="#">魏晋</a>
-                  <span>：</span>
-                  <a href="#">曹丕</a></p>
-                <div class="contson" id="contsoncbc20be78397">
-                  <div id="synopsis48008">
-                    <div class="fanyiShow" style="bottom: 28;" onclick="showAllContent(48008)"></div>
-                    <p>上山采薇，薄暮苦饥。
-                      <br>溪谷多风，霜露沾衣。
-                      <br>野雉群雊，猿猴相追。
-                      <br>随波转</p>
-                    <div class="more">
-                      <a href="javascript:showAllContent(48008)">展开阅读全文∨</a></div>
-                  </div>
-                  <div id="mainText48008" style="display:none;">
-                    <p>上山采薇，薄暮苦饥。
-                      <br>溪谷多风，霜露沾衣。
-                      <br>野雉群雊，猿猴相追。
-                      <br>还望故乡，郁何垒垒！
-                      <a title="收起" href="javascript:hideContent(48008)">
-                        <u>▲</u>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="tag">
-                <a href="#">乐府</a>
-                <span>，</span>
-                <a href="#">军旅</a>
-                <span>，</span>
-                <a href="#">生活</a></div>
-            </div>
-          <script src="js/skin.js" type="text/javascript" charset="utf-8"></script>
-        </body>
-      
-      </html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta http-equiv="Cache-Control" content="no-transform " />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"
+		/>
+		<meta name="format-detection" content="telephone=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name=" apple-mobile-web-app-status-bar-style" />
+		<title>
+			古诗文网
+		</title>
+		<meta name="description" content="" />
+		<link href="css/skin20190626.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+		<textarea style="display: none;" cols="1" rows="1" id="txtare7722">
+			复制诗文内容
+		</textarea>
+		<div class="main1" id="main1">
+			<a id="main1a" href="/">
+				<b>
+					古诗文网
+				</b>
+			</a>
+			<span>
+				<img src="img/docFenge2017.png" width="2" height="50" alt="" />
+			</span>
+			<a class="icons" href="/">
+				<img class="down" src="img/docDown2017.png" alt="" width="26" height="26"
+				/>
+			</a>
+			<span>
+				<img src="img/docFenge2017.png" width="2" height="50" alt="" />
+			</span>
+			<span>
+				<img src="img/docFenge2017.png" width="2" height="50" alt="" />
+			</span>
+			<a class="icons" href="/">
+				<img style="margin-top:11px;" src="img/docMember2017.png" alt="用户中心" width="26"
+				height="26" />
+			</a>
+			<span>
+				<img src="img/docFenge2017.png" width="2" height="50" alt="" />
+			</span>
+			<a id="guanzhua" href="/">
+				关注
+			</a>
+			<span id="guanzhuspan">
+				<img src="img/docFenge2017.png" width="2" height="50" alt="" />
+			</span>
+		</div>
+		<!--搜索框-->
+		<div class="search">
+			<div>
+				<form action="#" onsubmit="return selectSearch()" contenttype="text/html; charset=utf-8">
+					<input onfocus="setInterval('showBos()',1000)" id="txtKey" name="value"
+					type="text" value="" maxlength="40" autocomplete="off" />
+					<input type="submit" class="icon_search" value="" />
+					<input id="b" style="display:none;" type="text" />
+				</form>
+			</div>
+			<div id="box">
+			</div>
+		</div>
+		<!--tab切换-->
+		<div id="main2" class="main2">
+			<a href="tab1.html">
+				推荐
+			</a>
+			<a class="active">
+				诗文
+			</a>
+			<a href="tab3.html">
+				名句
+			</a>
+			<a href="tab4.html">
+				作者
+			</a>
+			<a href="tab5.html">
+				古籍
+			</a>
+		</div>
+		<!--主要内容部分-->
+		<div class="main3" id="main3">
+			<!--诗词详情-->
+			<div class="sons">
+				<div class="cont">
+					<h1 class="text_content_title">
+						将进酒
+					</h1>
+					<p class="source">
+						<a href="#">
+							唐代
+						</a>
+						<span>
+							：
+						</span>
+						<a href="#">
+							李白
+						</a>
+					</p>
+					<div class="contson" id="contsonee16df5673bc">
+						君不见，黄河之水天上来，奔流到海不复回。
+						<br>
+						君不见，高堂明镜悲白发，朝如青丝暮成雪。
+						<br>
+						人生得意须尽欢，莫使金樽空对月。
+						<br>
+						五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。
+					</div>
+				</div>
+				<div class="tag">
+					<a href="#">
+						乐府
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						唐诗三百首
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						抒情
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						哲理
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						忧愤
+					</a>
+				</div>
+			</div>
+			<!--译文及注释的缩略版-->
+			<div id="synopsis1" class="sons">
+				<div class="contyishang" style="padding-bottom:10px;">
+					<div class="fanyiShow" onclick="showAllContent(1)">
+					</div>
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								译文及注释
+							</span>
+						</h2>
+					</div>
+					<p>
+						译文
+						<br>
+						（缩略版）你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔东海从来不会再往回流。
+						<br>
+						你难道没有看见，在高堂上面对明镜，深沉悲叹那一头白发？早晨还是青丝到了傍晚却变得如雪一般。
+						<div class="more">
+							<a style="text-decoration:none;" href="javascript:showAllContent(1)">
+								展开阅读全文∨
+							</a>
+						</div>
+				</div>
+			</div>
+			<!--译文及注释的完整版-->
+			<div id="mainText1" class="sons" style="display: none;">
+				<div class="contyishang">
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								译文及注释
+							</span>
+						</h2>
+					</div>
+					<p>
+						<strong>
+							译文
+							<br>
+						</strong>
+						（完整版）你难道没有看见吗？那黄河之水犹如从天上倾泻而来，波涛翻滚直奔东海从来不会再往回流。
+						<p>
+							<strong>
+								注释
+								<br>
+							</strong>
+							将进酒：劝酒歌，属乐府旧题。将（qiāng）：请。
+							<a title="收起" href="javascript:hideContent(1)">
+								▲
+							</a>
+						</p>
+				</div>
+				<div class="cankao">
+					<p class="cankao_name">
+						参考资料：
+					</p>
+					<div class="cankao_section">
+						<span class="cankao_title">
+							1、
+						</span>
+						<span class="cankao_content">
+							山东省教学研究室．普通高中新课程实验教科书·语文（选修）唐诗宋词选读：山东人民出版社，2008：3-4．
+						</span>
+					</div>
+					<div class="cankao_section">
+						<span class="cankao_title">
+							2、
+						</span>
+						<span class="cankao_content">
+							李静．唐诗宋词鉴赏．北京：华文出版社，2009：60-61．
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="sons">
+				<div class="contyishang">
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								故事
+							</span>
+						</h2>
+					</div>
+					<p>
+						关于这首诗的写作时间，说法不一。黄锡珪编的《李太白编年诗集目录》记录为天宝十一载（公元752年）。一般认为这是天宝（公元742年正月—756年七月，唐玄宗李隆基的年号）年间李白离开京城后，周游梁、宋，与友人岑勋、元丹丘相会时所作。
+					</p>
+				</div>
+				<div class="cankao">
+					<p class="cankao_name">
+						参考资料：
+					</p>
+					<div class="cankao_section">
+						<span class="cankao_title">
+							1、
+						</span>
+						<span class="cankao_content">
+							萧士赟《分类补注李太白诗》
+						</span>
+					</div>
+				</div>
+			</div>
+			<div id="synopsis1217" class="sons">
+				<div class="contyishang" style="padding-bottom:10px;">
+					<div class="fanyiShow" onclick="showAllContent(1217)">
+					</div>
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								鉴赏
+							</span>
+						</h2>
+					</div>
+					<p>
+						《将进酒》原是汉乐府短箫铙歌的曲调，标题的意思为“劝酒歌”，内容多是咏唱喝酒放歌之事。这首诗约作于天宝十一载（公元752年），他当时和友人岑勋在嵩山另一老友元丹丘的颍阳山居作客，作者正值仕途遇挫之际，所以借酒兴诗，来了一次酣畅淋漓的抒发。在这首诗里，李白“借题发挥”，借酒消愁，感叹人生易老
+					</p>
+					<div class="more">
+						<a style="text-decoration:none;" href="javascript:showAllContent(1217)">
+							展开阅读全文∨
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="mainText1217" class="sons" style="display: none;">
+				<div class="contyishang">
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								鉴赏
+							</span>
+						</h2>
+					</div>
+					<p>
+						《将进酒》原是汉乐府短箫铙歌的所以借酒兴诗，来了一次酣畅淋漓。
+					</p>
+					<p>
+						刚露一点深衷，又说回酒了，而且看起来酒兴更高了。以下诗情再入狂放，而且愈来愈狂人””。情变灭”的结尾，显见诗人奔涌跌宕的感情激流。通观全篇，真是大起大落，非如椽巨笔不办。
+					</p>
+					<a title="收起" href="javascript:hideContent(1217)">
+						▲
+					</a>
+					</p>
+				</div>
+				<div class="cankao">
+					<p class="cankao_name">
+						参考资料：
+					</p>
+					<div class="cankao_section">
+						<span class="cankao_title">
+							1、
+						</span>
+						<span class="cankao_content">
+							李静．唐诗宋词鉴赏．北京：华文出版社，2009：60-61
+						</span>
+					</div>
+					<div class="cankao_section">
+						<span class="cankao_title">
+							2、
+						</span>
+						<span class="cankao_content">
+							周啸天等．唐诗鉴赏辞典．上海：上海辞书出版社，1983：225-228
+						</span>
+					</div>
+				</div>
+			</div>
+			<!--赏析简略-->
+			<div id="synopsis7580" class="sons">
+				<div class="contyishang" style="padding-bottom:10px;">
+					<div class="fanyiShow" onclick="showAllContent(7580)">
+					</div>
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								赏析
+							</span>
+						</h2>
+					</div>
+					<p>
+						杜甫盛赞李白的诗说“笔落惊风雨，诗成泣鬼神”，李白自己也十分自负地说“兴酣落笔摇五岳，诗成啸傲凌沧洲”，他的诗极富浪漫主义色彩，想象丰富，极尽夸张之能事，一旦诗兴大发之时，豪情便喷薄而出，一泻千里，但又收放自如，达到了极高的艺术境界，《将进酒》即为明证。
+					</p>
+					<p>
+						这首诗意在表达
+					</p>
+					<div class="more">
+						<a style="text-decoration:none;" href="javascript:showAllContent(7580)">
+							展开阅读全文∨
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--赏析全文-->
+			<div id="mainText7580" class="sons" style="display: none;">
+				<div class="contyishang">
+					<div class="fanyiContent">
+						<h2>
+							<span class="headline_2">
+								赏析
+							</span>
+						</h2>
+					</div>
+					<p>
+						（全文）杜甫盛赞李白的诗说“笔落惊风雨，诗成泣鬼神”，李白自己也十分自负地说“兴酣落笔摇五岳，诗成啸傲凌沧洲”，他的诗极富浪漫主义色彩，想象丰富，极尽夸张之能事，一旦诗兴大发之时，豪情便喷薄而出，一泻千里，但又收放自如，达到了极高的艺术境界，《将进酒》即为明证。
+					</p>
+					<p>
+						这首诗意在表达人生几何，及时行乐，圣者寂寞，饮者留名的虚无消沉思想，愿在长醉中了却一切。诗的开头六句，写人生寿命如黄河之水奔腾入海，一去不复重返，如此，应及时行乐，莫负光阴。“天生”十六句，写人生富贵不能长保，因而“千金散尽”“且为乐”。同时指出“自古圣贤皆寂寞”，只有“饮者留名”千古，并以陈王曹植为例，抒发了诗人内心的不平。“主人”六句结局，写诗人酒兴大作，“五花马”、“千金裘”都不足惜，只图一醉方休。表达了诗人旷达的胸怀。“天生我材必有用”句，是诗人自信为人的自我价值，也流露怀才不遇和渴望用世的积极思想感情。
+					</p>
+				</div>
+				<div class="cankao">
+					<p class="mianze">
+						本节内容由匿名网友上传，原作者已无法考证。本站免费发布仅供学习参考，其观点不代表本站立场。
+					</p>
+				</div>
+			</div>
+			<!--作者-->
+			<div class="sonspic">
+				<div class="cont" style="margin-top:10px;">
+					<div class="divimg" style="margin-top:2px;">
+						<a href="#">
+							<!-- 诗人头像图片 -->
+							<img src="https://song.gushiwen.org/authorImg/libai.jpg" width="105" height="150"
+							alt="李白">
+						</a>
+					</div>
+					<p style="height:24px;">
+						<a class="headline_a" href="#">
+							<b>
+								李白
+							</b>
+						</a>
+					</p>
+					<p style=" margin:0px;">
+						李白（701年－762年），字太白，号青莲居士，唐朝浪漫主义诗人，被后人誉为“诗仙”。祖籍陇西成纪(待考)，出生于西域碎叶城，4岁再随父迁至剑南道绵州。李白存世诗文千余篇，有《李太白集》传世。762年病逝，享年61岁。其墓在今安徽当涂，四川江油、湖北安陆有纪念馆。
+						<a href="#">
+							►1180篇诗文
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="title">
+				<div class="titleleft">
+				</div>
+				猜您喜欢
+			</div>
+			<div class="sons">
+				<div class="cont">
+					<p>
+						<a class="headline_a" href="#">
+							<b>
+								善哉行·其一
+							</b>
+						</a>
+					</p>
+					<p class="source">
+						<a href="#">
+							魏晋
+						</a>
+						<span>
+							：
+						</span>
+						<a href="#">
+							曹丕
+						</a>
+					</p>
+					<div class="contson" id="contsoncbc20be78397">
+						<div id="synopsis48008">
+							<div class="fanyiShow" style="bottom: 28;" onclick="showAllContent(48008)">
+							</div>
+							<p>
+								上山采薇，薄暮苦饥。
+								<br>
+								溪谷多风，霜露沾衣。
+								<br>
+								野雉群雊，猿猴相追。
+								<br>
+								随波转
+							</p>
+							<div class="more">
+								<a href="javascript:showAllContent(48008)">
+									展开阅读全文∨
+								</a>
+							</div>
+						</div>
+						<div id="mainText48008" style="display:none;">
+							<p>
+								上山采薇，薄暮苦饥。
+								<br>
+								溪谷多风，霜露沾衣。
+								<br>
+								野雉群雊，猿猴相追。
+								<br>
+								还望故乡，郁何垒垒！
+								<a title="收起" href="javascript:hideContent(48008)">
+									<u>
+										▲
+									</u>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="tag">
+					<a href="#">
+						乐府
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						军旅
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						生活
+					</a>
+				</div>
+			</div>
+			<div class="sons">
+				<div class="cont">
+					<p>
+						<a class="headline_a" href="#">
+							<b>
+								善哉行·其一
+							</b>
+						</a>
+					</p>
+					<p class="source">
+						<a href="#">
+							魏晋
+						</a>
+						<span>
+							：
+						</span>
+						<a href="#">
+							曹丕
+						</a>
+					</p>
+					<div class="contson" id="contsoncbc20be78397">
+						<div id="synopsis48009">
+							<div class="fanyiShow" style="bottom: 28;" onclick="showAllContent(48009)">
+							</div>
+							<p>
+								上山采薇，薄暮苦饥。
+								<br>
+								溪谷多风，霜露沾衣。
+								<br>
+								野雉群雊，猿猴相追。
+								<br>
+								随波转
+							</p>
+							<div class="more">
+								<a href="javascript:showAllContent(48009)">
+									展开阅读全文∨
+								</a>
+							</div>
+						</div>
+						<div id="mainText48009" style="display:none;">
+							<p>
+								上山采薇，薄暮苦饥。
+								<br>
+								溪谷多风，霜露沾衣。
+								<br>
+								野雉群雊，猿猴相追。
+								<br>
+								还望故乡，郁何垒垒！
+								<a title="收起" href="javascript:hideContent(48009)">
+									<u>
+										▲
+									</u>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="tag">
+					<a href="#">
+						乐府
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						军旅
+					</a>
+					<span>
+						，
+					</span>
+					<a href="#">
+						生活
+					</a>
+				</div>
+			</div>
+			<script src="js/skin.js" type="text/javascript" charset="utf-8">
+			</script>
+	</body>
+</html>
